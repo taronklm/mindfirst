@@ -26,13 +26,6 @@ Für das Backend wird zusätzlich **Ollama** und das Model **llama3.1:8b** benö
 cd backend
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-# .env anlegen:
-# MONGODB_URI="mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-# MONGODB_DB="Cluster0"
-# JWT_SECRET="<starkes_secret>"
-# OLLAMA_BASE_URL="http://127.0.0.1:11434"
-# MODEL_NAME="llama3.1:8b"
-# CORS_ORIGINS="http://localhost:3000"
 # Modell vorbereiten: ollama pull llama3.1:8b
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
@@ -42,8 +35,10 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 cd frontend
 npm install
 # .env.local anlegen:
+# MONGODB_URI="mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# MONGODB_DB="Cluster0"
+# JWT_SECRET="<starkes_secret>"
 # MF_API_BASE=http://127.0.0.1:8000
-# JWT_SECRET=<zufaelliger_geheimer_schluessel>
 npm run dev
 # App: http://localhost:3000
 ```

@@ -11,7 +11,6 @@ Das Backend stellt die API für die MindFirst Chat-App bereit. Es basiert auf **
 2. Python-Umgebung erstellen (z. B. venv)
    ```bash
    python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
    ```
 3. Abhängigkeiten installieren:
    ```bash
