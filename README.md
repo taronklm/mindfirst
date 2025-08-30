@@ -12,4 +12,4 @@ MindFirst ist eine KI-gestützte Chat-App zur mentalen Unterstützung. Die Anwen
 
 Die Installation erfolgt getrennt für Backend und Frontend. In den jeweiligen Ordnern finden sich detaillierte Anleitungen.
 
-Für das Backend wird zusätzlich **Ollama** benötigt. Bitte stelle sicher, dass Ollama auf deinem System installiert ist, bevor du den Server startest.
+Für das Backend wird zusätzlich **Ollama** und das Model **llama3.1:8b** benötigt. Bitte stelle sicher, dass Ollama auf deinem System installiert ist und das Model runtergeladen wurde, bevor du den Server startest.
