@@ -4,12 +4,20 @@ Das Backend stellt die API für die MindFirst Chat-App bereit. Es basiert auf **
 
 ## Installation
 
-1. Python-Umgebung erstellen (z. B. venv)
-2. Abhängigkeiten installieren:
+1. Modell vorbereiten
+   ```bash
+   ollama pull llama3.1:8b
+   ```
+2. Python-Umgebung erstellen (z. B. venv)
+   ```bash
+   python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+3. Abhängigkeiten installieren:
    ```bash
    pip install -r requirements.txt
    ```
-3. Server starten:
+4. Server starten:
    ```bash
    uvicorn main:app --reload
    ```
